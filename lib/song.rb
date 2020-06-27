@@ -55,7 +55,7 @@ class Song
 .chomp will remove ".mp3"
 =end 
 
-    data = filename.split ("-")
+    data = filename.split (" - ")
     
     song_name = data[1].chomp(".mp3")
     
