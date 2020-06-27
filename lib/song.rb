@@ -56,11 +56,12 @@ class Song
 =end 
 
     data = filename.split ("-")
-    artist = data[0]
+    
     song_name = data[1].chomp(".mp3")
+    
     song = self.new
     song.name = song_name
-    song.artist_name = artist
+    song.artist_name = data[0]
     song
  
   end 
