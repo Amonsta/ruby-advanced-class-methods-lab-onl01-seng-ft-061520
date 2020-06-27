@@ -51,19 +51,18 @@ class Song
   end
 
   def self.new_from_filename(filename)
-=begin have to split it like the csv example. then work with the array index
-.chomp will remove ".mp3"
-=end 
 
-    data = filename.split (" - ")
+    data = filename.split (" - ") 
     
-    song_name = data[1].chomp(".mp3")
+    #created an array of the new filename and sep the artist from the song
+    #variable to easily access the song w/o .mp3 attached to it
     
-    song = self.new
+    
+    song_name = data[1].chomp(".mp3") 
+    song = self.new #
     song.name = song_name
     song.artist_name = data[0]
     song
- 
   end 
 
   def self.create_from_filename(filename)
