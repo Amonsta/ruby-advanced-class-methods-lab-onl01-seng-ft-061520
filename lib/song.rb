@@ -1,3 +1,5 @@
+require 'pry'
+
 class Song
   attr_accessor :name, :artist_name
   @@all = []
@@ -48,10 +50,26 @@ class Song
     @@all.sort_by{|i| i.name}  
   end
 
-  def self.new_from_filename
+  def self.new_from_filename(filename)
+=begin have to split it like the csv example. then work with the array index
+delete_if  end_with? .mp3
+=end
+  filename.split ("-")
+  data = filename.collect do |file|
+    
+    artist_name = file[0]
+    song_name = file[1] 
+    file_type = file[2]
+end
+    
+  
+  
+  
+
+
   end 
 
-  def self.create_from_filename
+  def self.create_from_filename(filename)
   end
   
   def self.destroy_all
