@@ -56,17 +56,10 @@ delete_if  end_with? .mp3
 =end
   filename.split ("-")
   data = filename.collect do |file|
-end
+
 binding.pry
 
-
-end
-    
-  
-  
-  
-
-
+    end
   end 
 
   def self.create_from_filename(filename)
