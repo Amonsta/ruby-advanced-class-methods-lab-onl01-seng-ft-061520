@@ -52,11 +52,13 @@ class Song
 
   def self.new_from_filename(filename)
 =begin have to split it like the csv example. then work with the array index
-delete_if  end_with? .mp3
+.chomp will remove ".mp3"
 =end
     data = filename.split ("-")
     artist = data[0]
     song_name = data[1].chomp(".mp3")
+    full_data = artist + song_name
+    full_data
   end 
 
   def self.create_from_filename(filename)
