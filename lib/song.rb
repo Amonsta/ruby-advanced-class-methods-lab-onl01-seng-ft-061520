@@ -54,7 +54,9 @@ class Song
 =begin have to split it like the csv example. then work with the array index
 delete_if  end_with? .mp3
 =end
-#   filename.split ("-")
+#   data =filename.split ("-")
+    artist = data[0]
+    song_name = data[1]
   # data = filename.collect do |file|
 
 binding.pry
