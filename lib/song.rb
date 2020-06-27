@@ -59,9 +59,9 @@ class Song
     song_name = data[1].chomp(".mp3")
     full_data = artist + song_name
     full_data
- =end   
+=end   
     
-    
+binding.pry  
   end 
 
   def self.create_from_filename(filename)
