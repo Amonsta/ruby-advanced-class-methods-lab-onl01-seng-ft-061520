@@ -58,10 +58,8 @@ delete_if  end_with? .mp3
   data = filename.collect do |file|
 
 binding.pry
-  
-    artist_name = file[0]
-    song_name = file[1] 
-    file_type = file[2]
+end 
+
 end
     
   
